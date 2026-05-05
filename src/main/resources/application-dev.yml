@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:${POSTGRES_PORT}/${POSTGRES_DATABASE:world_cup_2026}
+    username: ${POSTGRES_USERNAME:postgres}
+    password: ${POSTGRES_PASSWORD:postgres}
+
+  jpa:
+    show-sql: true
