@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: world-cup-sticker-catalog
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+  profiles:
+    active: ${ACTIVE_SPRING_PROFILE:dev}
